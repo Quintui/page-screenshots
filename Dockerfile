@@ -43,6 +43,9 @@ COPY . .
 # Build TypeScript
 RUN npm run build
 
+# Set API key environment variable
+ENV API_KEY=""
+
 # Expose port
 EXPOSE 3000
 
